@@ -3,6 +3,7 @@ import logob from './logob.svg';
 import './Narbar.css';
 import { useNavigate } from 'react-router-dom';
 import './MovieList'
+import './Concerts'
 
 const Navbar = () => {
   const navigate = useNavigate(); // This works only inside Router context
@@ -14,6 +15,9 @@ const Navbar = () => {
   const handleMovie = () => {
     navigate('/MovieList');
   };
+   const handleConsert = () => {
+    navigate('/Conserts');
+  };
 
 
 
@@ -24,7 +28,7 @@ const Navbar = () => {
         <input type="search" name="search" placeholder="  search movies, concerts, events, plays..." />
         <ul>
          <a href = "MovieList" onclick = {handleMovie}><li>movies</li></a>
-         <a href = ""><li>Conserts</li></a>  
+         <a href = "" onClick = {handleConsert}><li>Conserts</li></a>  
         <a href = ""><li>Plays</li></a>
          <a href = ""><li>events</li></a>
         </ul>

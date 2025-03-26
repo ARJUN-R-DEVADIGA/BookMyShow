@@ -21,7 +21,7 @@ import nn from './nn.jpg';
 
 
 
-function MovieList() {
+const MovieList = () => {
   const movies = [
     { 
       title: "CAPTAIN AMERICA BRAVE NEW WORLD", 
